@@ -112,13 +112,6 @@ Click the green Run button or use ````Shift + F10````
     "tenantId": "newTenant"
 }
 ````
-{
-  "email": "updated@gmail.com",
-  "firstName": "Updated",
-  "lastName": "Name",
-  "tenantId": "newTenant"
-}
-````
 ## 🔍 API Endpoints
 
 | Method | Endpoint             | Description                    |
