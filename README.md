@@ -29,7 +29,7 @@ This is a simple REST API project for managing users, built using **Java 17**, *
 
 * [Author](#author)
 
-## ✅ Features
+##  Features
 
 - `POST /api/create-user` – Create a new user
 - `POST /api/update-user` – Update existing user details
@@ -38,7 +38,7 @@ This is a simple REST API project for managing users, built using **Java 17**, *
 
 ---
 
-## 🧾 MongoDB Document Structure
+##  MongoDB Document Structure
 
 ```json
 {
@@ -53,7 +53,7 @@ This is a simple REST API project for managing users, built using **Java 17**, *
 }
 ```
 
-## ⚙️ Technologies Used
+##  Technologies Used
 
 * Java 17
 
@@ -71,7 +71,7 @@ This is a simple REST API project for managing users, built using **Java 17**, *
 
 * Swagger (springdoc-openapi-ui)
 
-## 📁 Project Structure
+##  Project Structure
 
 ````
 user-api-springboot/
@@ -98,7 +98,7 @@ user-api-springboot/
 | POST   | `/api/toggle-user`   | Toggle user activation by ID   |
 
 
-## 🚀 How to Run This Project
+##  How to Run This Project
 
 ### **🖥️ Prerequisites**
 
@@ -108,7 +108,7 @@ user-api-springboot/
 
 * IntelliJ IDEA (or other Java IDE)
 
-### 📦 **Steps to Run
+### **Steps to Run**
 
 **1. Clone the repo:**
 
@@ -128,7 +128,7 @@ Click the green Run button or use ````Shift + F10````
 
 **5. Test the API in Swagger UI:**
 
-### **🚀 Run Commands**
+### **Run Commands**
 ````
 # Install dependencies and build the project
 
@@ -141,7 +141,7 @@ The application runs on:
 ````
 http://localhost:8080
 ````
-## 🗃️ MongoDB Setup
+##  MongoDB Setup
 
 ### Step-by-step:
 
@@ -175,7 +175,7 @@ Swagger Endpoints:
 
 * OpenAPI JSON: http://localhost:8080/v3/api-docs
 
-## 📂 Git Ignore Setup
+##  Git Ignore Setup
 
 A .gitignore file was added to exclude unnecessary files:
 ````
@@ -190,7 +190,7 @@ A .gitignore file was added to exclude unnecessary files:
 .DS_Store
 Thumbs.db
 ````
-## 📸 Swagger UI Screenshot
+##  Swagger UI Screenshot
 ````
 ![Swagger UI](src/main/resources/static/swagger-ui.png)
 ````
@@ -234,7 +234,7 @@ Thumbs.db
 
 
 
-## 🙋‍♀️ Author
+##  Author
 Srijeeta Purkait
 
 Software Engineer Trainee– [GetPost Labs]
