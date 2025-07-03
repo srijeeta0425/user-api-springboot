@@ -241,5 +241,5 @@ Software Engineer Trainee– [GetPost Labs]
 
 📫 Email: srijeeta@getpostlabs.io
 
-🔗 GitHub: https://github.com/srijeeta0425/user-api-springboot
+🔗 GitHub: https://github.com/srijeeta0425/user-api-springboot/tree/master
 
