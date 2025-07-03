@@ -3,7 +3,7 @@
 This is a simple REST API project for managing users, built using **Java 17**, **Spring Boot**, and **MongoDB**. It supports creating, updating, listing, and toggling user activation status.
 
 ---
-# 📌 Table of Contents
+#  Table of Contents
 
 * [Features](#features)
 
