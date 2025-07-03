@@ -3,6 +3,31 @@
 This is a simple REST API project for managing users, built using **Java 17**, **Spring Boot**, and **MongoDB**. It supports creating, updating, listing, and toggling user activation status.
 
 ---
+# 📌 Table of Contents
+
+* [Features](#features)
+
+* [MongoDb Document Structure](#mongodb-document-structure)
+
+* [Technologies Used](#technologies-used)
+
+* [Project Structure](#project-structure)
+
+* [API Endpoints](#api-endpoints)
+
+* [How to Run the Project](#how-to-run-the-project)
+
+* [MongoDB Setup](#mongodb-setup)
+
+* [OpenAPI Documentation](#openapi-documentation)
+
+* [Git Ignore Setup](#git-ignore-setup)
+
+* [Swagger UI Screenshot](#swagger-ui-screenshot)
+
+* [API Testing Examples](#api-testing-examples)
+
+* [Author](#author)
 
 ## ✅ Features
 
@@ -32,7 +57,7 @@ This is a simple REST API project for managing users, built using **Java 17**, *
 
 * Java 17
 
-* Spring Boot
+* Spring Boot 3.2.4
 
 * MongoDB (local)
 
@@ -43,6 +68,34 @@ This is a simple REST API project for managing users, built using **Java 17**, *
 * Git & GitHub
 
 * Postman (for API testing)
+
+* Swagger (springdoc-openapi-ui)
+
+## 📁 Project Structure
+
+````
+user-api-springboot/
+├── src/
+│   ├── main/
+│   │   ├── java/com/example/userapi/
+│   │   │   ├── controller/
+│   │   │   ├── model/
+│   │   │   ├── repository/
+│   │   │   └── service/
+│   │   └── resources/
+│   │       └── application.properties
+├── pom.xml
+├── README.md
+````
+
+## 🔍 API Endpoints
+
+| Method | Endpoint             | Description                    |
+|--------|----------------------|--------------------------------|
+| POST   | `/api/create-user`   | Create a new user              |
+| POST   | `/api/update-user`   | Update existing user info      |
+| GET    | `/api/users`         | Fetch list of all users        |
+| POST   | `/api/toggle-user`   | Toggle user activation by ID   |
 
 
 ## 🚀 How to Run This Project
@@ -73,8 +126,74 @@ Open ````UserApiApplication.java````
 
 Click the green Run button or use ````Shift + F10````
 
-**5. Test the API in Postman:**
+**5. Test the API in Swagger UI:**
 
+### **🚀 Run Commands**
+````
+# Install dependencies and build the project
+
+mvn clean install
+
+# Run the Spring Boot application
+mvn spring-boot:run
+````
+The application runs on:
+````
+http://localhost:8080
+````
+## 🗃️ MongoDB Setup
+
+### Step-by-step:
+
+1. Download MongoDB Community Edition from MongoDB Downloads
+
+2. Start MongoDB server (default port is 27017)
+
+3. Make sure MongoDB is running
+
+4. In application.properties, set the URI:
+````
+spring.data.mongodb.uri=mongodb://localhost:27017/user-api-db
+````
+Spring Boot will auto-create the collections.
+
+## OpenAPI Documentation
+
+### Swagger Setup
+
+Included dependency in ```pom.xml```:
+````
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-ui</artifactId>
+    <version>1.6.14</version>
+</dependency>
+````
+Swagger Endpoints:
+
+* Swagger UI: http://localhost:8080/swagger-ui.html
+
+* OpenAPI JSON: http://localhost:8080/v3/api-docs
+
+## 📂 Git Ignore Setup
+
+A .gitignore file was added to exclude unnecessary files:
+````
+# Build output
+/target/
+
+# IDE settings
+/.idea/
+*.iml
+
+# OS clutter
+.DS_Store
+Thumbs.db
+````
+## 📸 Swagger UI Screenshot
+````
+![Swagger UI](src/main/resources/static/swagger-ui.png)
+````
 ### Example 
 1. ````POST```` request to ````/api/create-user:````
 ````
@@ -112,32 +231,8 @@ Click the green Run button or use ````Shift + F10````
     "tenantId": "newTenant"
 }
 ````
-## 🔍 API Endpoints
-
-| Method | Endpoint             | Description                    |
-|--------|----------------------|--------------------------------|
-| POST   | `/api/create-user`   | Create a new user              |
-| POST   | `/api/update-user`   | Update existing user info      |
-| GET    | `/api/users`         | Fetch list of all users        |
-| POST   | `/api/toggle-user`   | Toggle user activation by ID   |
 
 
-## 📁 Project Structure
-
-````
-user-api-springboot/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/userapi/
-│   │   │   ├── controller/
-│   │   │   ├── model/
-│   │   │   ├── repository/
-│   │   │   └── service/
-│   │   └── resources/
-│   │       └── application.properties
-├── pom.xml
-├── README.md
-````
 
 ## 🙋‍♀️ Author
 Srijeeta Purkait
@@ -145,5 +240,6 @@ Srijeeta Purkait
 Software Engineer Trainee– [GetPost Labs]
 
 📫 Email: srijeeta@getpostlabs.io
+
 🔗 GitHub: https://github.com/srijeeta0425/user-api-springboot
 
