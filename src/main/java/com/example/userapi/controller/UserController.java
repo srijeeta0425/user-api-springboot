@@ -1,7 +1,7 @@
 package com.example.userapi.controller;
 
 import com.example.userapi.model.User;
-import com.example.userapi.service.UserService;
+import com.example.userapi.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
