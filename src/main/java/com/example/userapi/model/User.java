@@ -20,6 +20,17 @@ public class User {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
+    public User(String id, String email, String firstName, String lastName, boolean isActive, String tenantId, LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.id = id;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.isActive = isActive;
+        this.tenantId = tenantId;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+
     // Getters and Setters
     public String getId() {
         return id;
