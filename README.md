@@ -35,6 +35,9 @@ This is a simple REST API project for managing users, built using **Java 17**, *
 - `POST /api/update-user` – Update existing user details
 - `GET /api/users` – List all users
 - `POST /api/toggle-user?id=` – Activate or deactivate a user
+- `.idea` folder removed and include in `.gitignore` 
+- Includes basic **unit testing cases** 
+- Proper **Git Branching and Pull Request** for workflow followed
 
 ---
 
@@ -78,14 +81,23 @@ user-api-springboot/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/example/userapi/
-│   │   │   ├── controller/
-│   │   │   ├── model/
-│   │   │   ├── repository/
-│   │   │   └── service/
+│   │   │   ├── controller/            # REST API controllers
+│   │   │   ├── model/                 # User model
+│   │   │   ├── repository/            # MongoDB repository
+│   │   │   └── service/               # Business logic
 │   │   └── resources/
-│   │       └── application.properties
-├── pom.xml
-├── README.md
+│   │       ├── application.properties
+│   │       └── static/
+│   │           └── swagger-ui.png     # Swagger screenshot (if added)
+│
+│   ├── test/
+│   │   └── java/com/example/userapi/
+│   │       ├── DummyTest.java         # Basic test to verify setup
+│
+├── .gitignore                         # Now includes `.idea/`
+├── pom.xml                            # Maven project file with dependencies
+├── README.md                          # Full documentation
+
 ````
 
 ## 🔍 API Endpoints
