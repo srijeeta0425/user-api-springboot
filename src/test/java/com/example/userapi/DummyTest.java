@@ -6,9 +6,21 @@ import static org.junit.jupiter.api.Assertions.*;
 public class DummyTest {
 
     @Test
-    void sampleTest() {
-        int expected = 10;
-        int actual = 5 + 5;
-        assertEquals(expected, actual);
+    void sampleAdditionTest() {
+        int result = 2 + 3;
+        assertEquals(5, result);
+    }
+
+    @Test
+    void stringConcatenationTest() {
+        String name = "Srijeeta";
+        String greeting = "Hello, " + name;
+        assertEquals("Hello, Srijeeta", greeting);
+    }
+
+    @Test
+    void booleanTest() {
+        boolean isActive = true;
+        assertTrue(isActive);
     }
 }
