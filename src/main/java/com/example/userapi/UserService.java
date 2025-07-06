@@ -1,4 +1,4 @@
-package com.example.userapi.service;
+package com.example.userapi;
 
 import com.example.userapi.model.User;
 import com.example.userapi.repository.UserRepository;
